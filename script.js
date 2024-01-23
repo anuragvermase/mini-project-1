@@ -44,14 +44,14 @@ if(userChoice===aiChoice){
     drawGame();
 }else {
  let userWin=true;
- if(userChoice==="rock"){
+ if(userChoice==="stone"){
     //scissor, paper
     userWin = aiChoice==="paper" ? false:true;
  }else if(userChoice==="paper"){
     //rock,scissor
     userWin = aiChoice==="scissor" ? false:true;
  }else{
- userWin = aiChoice==="rock" ? false:true;
+    userWin = aiChoice==="stone" ? false:true;
  }
  showWinner(userWin,userChoice,aiChoice);
 }
